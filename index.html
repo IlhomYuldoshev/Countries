@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+
+    <!-- Stylesheets -->
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="dark-mode">
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="logo-link" href="index.html">Where in the world?</a>
+        <a class="theme" href="#"><span class="theme-text">Dark mode</span></a>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="form-block">
+        <div class="container">
+          <form
+            class="search-form"
+            name="search"
+            action="https://echo.htmlacademy.ru"
+          >
+            <div class="form-input-wrapper">
+              <svg
+                class="search-svg-icon"
+                width="18"
+                height="18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5Zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <input
+                class="form-input"
+                type="search"
+                aria-label="search-input"
+                placeholder="Search for a country…"
+              />
+            </div>
+            <div class="form-filter-wrapper">
+              <div class="filter-text">Filter by Region</div>
+              <div class="filter-list-wrapper">
+                <ul class="filter-list">
+                  <li class="filter-item">Africa</li>
+                  <li class="filter-item">America</li>
+                  <li class="filter-item">Asia</li>
+                  <li class="filter-item">Europe</li>
+                  <li class="filter-item">Oceania</li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <section class="countries-block">
+        <!-- COUNTRIES LIST -->
+        <div class="container">
+          <ul class="countries-list">
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/germany.svg"
+                alt="flag-of-Germany"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Germany</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 81,770,900
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Europe
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Berlin
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/usa.jpg"
+                alt="flag-of-USA"
+                srcset="./img/usa.jpg 1x, ./img/usa@2x.jpg 2x"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">United States of America</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 323,947,000
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Americas
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Washington,
+                    D.C.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/brazil.jpg"
+                alt="flag-of-Brazil"
+                srcset="./img/brazil.jpg 1x, ./img/brazil@2x.jpg 2x"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Brazil</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 206,135,893
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Americas
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Brasília
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/iceland.svg"
+                alt="flag-of-Iceland"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Iceland</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 334,300
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Europe
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Reykjavík
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/afghanistan.jpg"
+                alt="flag-of-Afghanistan"
+                srcset="./img/afghanistan.jpg 1x, ./img/afghanistan@2x.jpg 2x"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Afghanistan</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 27,657,145
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Asia
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Kabul
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/aland-islands.svg"
+                alt="flag-of-ÅlandIslands"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Åland Islands</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 28,875
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Europe
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Mariehamn
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/albania.jpg"
+                alt="flag-of-Albania"
+                srcset="./img/albania.jpg 1x, ./img/albania@2x.jpg 2x"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Albania</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 2,886,026
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Europe
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Tirana
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COUNTRIES ITEM -->
+            <li class="countries-item card">
+              <img
+                class="card-img"
+                src="./img/algeria.jpg"
+                alt="flag-of-Algeria"
+                srcset="./img/algeria.jpg 1x, ./img/algeria@2x.jpg 2x"
+              />
+              <div class="card-info-wrapper">
+                <h3 class="card-title">Algeria</h3>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 40,400,000
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Africa
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Algiers
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

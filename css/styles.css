@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+    url("./fonts/NunitoSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("./fonts/NunitoSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("./fonts/NunitoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("./fonts/NunitoSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-text-color: #111517;
+  --bg-color: #fff;
+  --body-bg-color: #fafafa;
+  --outline-color: rgb(202, 202, 202);
+}
+
+.dark-mode {
+  --main-text-color: #fff;
+  --bg-color: #2b3844;
+  --body-bg-color: #202c36;
+}
+
+*:focus {
+  outline: 1px dashed var(--outline-color);
+}
+
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  background-color: var(--body-bg-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1340px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+/* HEADER */
+.site-header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  background-color: var(--bg-color);
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--main-text-color);
+  white-space: nowrap;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--main-text-color);
+  text-decoration: none;
+  outline: none;
+}
+
+.theme::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/moon-light.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+  content: "";
+}
+
+body.dark-mode .theme::before {
+  background-image: url(../img/moon-dark.svg);
+}
+
+.theme-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* FORM BLOCK  */
+.form-block {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.form-input-wrapper {
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 18px 18px 18px 74px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+}
+
+.form-input:focus {
+  outline: 1px dashed var(--outline-color);
+  outline-offset: 3px;
+}
+
+.search-svg-icon {
+  position: absolute;
+  left: 32px;
+  top: 19px;
+  color: var(--main-text-color);
+}
+
+.form-input::placeholder {
+  color: var(--main-text-color);
+  opacity: 0.6;
+}
+
+.form-filter-wrapper {
+  position: relative;
+  padding: 18px 20px 18px 24px;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+.form-filter-wrapper::after {
+  width: 9px;
+  height: 5px;
+  background-image: url(../img/icon-more.svg);
+  content: "";
+}
+
+.form-filter-wrapper:hover .filter-list-wrapper {
+  display: block;
+  transition: transfrom 0.3s ease 1s;
+  transform: scale(1);
+}
+
+.filter-text {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-list-wrapper {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 57px;
+  left: 0;
+  /* display: none; */
+  transform-origin: center top;
+  transition: transform 0.3s ease 0s;
+  transform: scale(0.0001);
+  z-index: 9;
+}
+
+.filter-list {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  background-color: var(--bg-color);
+}
+
+.filter-item {
+  cursor: pointer;
+}
+
+.filter-item:hover {
+  text-decoration: underline;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* COUNTRIES LIST */
+
+.countries-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -73px;
+}
+
+.countries-item {
+  max-width: 265px;
+  margin-left: 73px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+  background-color: var(--bg-color);
+}
+
+.card-img {
+  height: 160px;
+  width: 265px;
+  margin-bottom: 24px;
+  object-fit: cover;
+}
+
+.card-info-wrapper {
+  background-color: var(--bg-color);
+  flex-grow: 1;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  color: var(--main-text-color);
+  white-space: nowrap;
+}
+
+.card-info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card-info-item {
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+.card-info-type {
+  font-weight: 600;
+}
