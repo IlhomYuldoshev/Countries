@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next-page</title>
+    <!-- Stylesheets -->
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="dark-mode">
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="logo-link" href="index.html">Where in the world?</a>
+        <a class="theme" href="#"><span class="theme-text">Dark mode</span></a>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="detail-block">
+        <div class="container">
+          <div class="go-back-wrapper">
+            <a class="go-back-btn" href="index.html"
+              ><svg
+                class="back-icon"
+                width="19"
+                height="12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="m6.464.107 1.179 1.179-3.89 3.889h14.85v1.65H3.753l3.89 3.889-1.179 1.179L.572 6 6.464.107Z"
+                  fill="currentColor"
+                /></svg
+              ><span>Back</span></a
+            >
+          </div>
+
+          <!-- MAIN INFORMATION -->
+          <section class="current-country-info-block">
+            <img
+              class="current-country-img"
+              src="./img/belgium.svg"
+              alt="flag-of-Belgium"
+            />
+            <div class="country-content">
+              <h2 class="country-content-title">Belgium</h2>
+              <div class="country-content-info">
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Native Name</span>: België
+                    Population
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Population</span>: 11,319,511
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Region</span>: Europe
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Sub Region</span>: Western
+                    Europe
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Capital</span>: Brussels
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-info-item">
+                    <span class="card-info-type">Top Level Domain</span>: .be
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Currencies</span>: Euro
+                  </div>
+                  <div class="card-info-item">
+                    <span class="card-info-type">Languages</span>: Dutch,
+                    French, German
+                  </div>
+                </div>
+              </div>
+              <div class="border-countries">
+                <div class="border-countries-title">Border Countries:</div>
+                <ul class="border-countries-list">
+                  <li class="border-countries-item">France</li>
+                  <li class="border-countries-item">Germany</li>
+                  <li class="border-countries-item">Netherlands</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
