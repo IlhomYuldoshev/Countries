@@ -242,7 +242,7 @@ body.dark-mode .theme::before {
   left: 0;
   /* display: none; */
   transform-origin: center top;
-  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0.3s;
   transform: scale(0.0001);
   z-index: 9;
 }
